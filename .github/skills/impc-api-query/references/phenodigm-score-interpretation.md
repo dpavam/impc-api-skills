@@ -1,7 +1,3 @@
----
-name: phenodigm-interpretation
-description: A skill to use when a user asks for interpretation of a phenodigm score
----
 
 # Phenodigm Interpretations
 Use the phenodigm-interpretation skills to respond to the user when they ask about the interpretation of a phenodigm score. 
