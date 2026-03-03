@@ -6,7 +6,6 @@ description: Queries the IMPC API using the `impc_api` python package. Use when 
 
 # IMPC API QUERY
 
-
 > EXECUTION ENVIRONMENT — READ FIRST
 > All code MUST be executed via the `pylance` MCP server tool.
 > Do NOT use any other execution method under any circumstances.
@@ -17,7 +16,7 @@ The IMPC Solr API should be queried only with `impc_api` python package. It cont
 
 ## Workflow
 1. Find the existing cores and available fields per core:
-    ``` uv run
+    ``` python
     import httpx
     try:
         async with httpx.AsyncClient() as client:
@@ -57,7 +56,7 @@ CORE-SPECIFIC RULES and EXAMPLE CALLS::
 RUNNING A QUERY:
 With the core and params that you have gathered use the rules and example calls to execute the following:
     
-``` uv run
+``` python
     from impc_api import solr_request
     _, df = solr_request(core, params, silent=True)
     return df.to_dict(orient="records")
