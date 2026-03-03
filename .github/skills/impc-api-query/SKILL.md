@@ -9,7 +9,7 @@ description: Queries the IMPC API using the `impc_api` python package. Use when 
 > EXECUTION ENVIRONMENT — READ FIRST
 > All code MUST be executed via the `pylance` MCP server tool.
 > Do NOT use any other execution method under any circumstances.
-> A uv environment at `/path/to/env` has all dependencies pre-installed.
+> A uv environment at `.venv` has all dependencies pre-installed.
 
 ## Context
 The IMPC Solr API should be queried only with `impc_api` python package. It contains cores and fields to query.
@@ -28,7 +28,6 @@ The IMPC Solr API should be queried only with `impc_api` python package. It cont
     ```
 
 2. Use the available cores and fields to craft a query as follows where both core and params are needed.
-
 REQUIRED ARGUMENTS:
     To run the `impc-api` request package, you need to figure out:
     core (str): The Solr core to query.
